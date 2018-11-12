@@ -41,7 +41,7 @@ my model architecture is showing below:
 
 ![](examples/model_architeture.JPG)
 
-you can see, the model is containing  5 layers of 2D convolutions, and 3 fully connected layer:
+you can see, the model is containing  5 layers of 2D convolutions, and 4 fully connected layer:
 
 | Layer         		|     input size	        					|   output size |
 |:---------------------:|:---------------------------------------------:|:-------:|
