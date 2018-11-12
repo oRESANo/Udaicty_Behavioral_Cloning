@@ -141,29 +141,19 @@ combin_y_train = np.concatenate((y_train, y_train1), axis=0)
 After the collection process, I had 7672 number of data points. 
 I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was Z as evidenced by ... I used an adam optimizer so that manually training the learning rate wasn't necessary. and final model has decent validation loss below:
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 5 as evidenced by over 5 the validation loss will be various which means overfitting. I used an adam optimizer so that manually training the learning rate wasn't necessary. and final model has decent validation loss below:
 ```
-Train on 6137 samples, validate on 1535 samples
-Epoch 1/10
-6137/6137 [==============================] - 56s 9ms/step - loss: 0.0203 - val_loss: 0.1854
-Epoch 2/10
-6137/6137 [==============================] - 56s 9ms/step - loss: 0.0159 - val_loss: 0.1653
-Epoch 3/10
-6137/6137 [==============================] - 56s 9ms/step - loss: 0.0136 - val_loss: 0.1774
-Epoch 4/10
-6137/6137 [==============================] - 56s 9ms/step - loss: 0.0128 - val_loss: 0.1641
-Epoch 5/10
-6137/6137 [==============================] - 56s 9ms/step - loss: 0.0121 - val_loss: 0.1568
-Epoch 6/10
-6137/6137 [==============================] - 56s 9ms/step - loss: 0.0112 - val_loss: 0.1657
-Epoch 7/10
-6137/6137 [==============================] - 57s 9ms/step - loss: 0.0105 - val_loss: 0.1506
-Epoch 8/10
-6137/6137 [==============================] - 56s 9ms/step - loss: 0.0103 - val_loss: 0.1511
-Epoch 9/10
-6137/6137 [==============================] - 56s 9ms/step - loss: 0.0095 - val_loss: 0.1591
-Epoch 10/10
-6137/6137 [==============================] - 56s 9ms/step - loss: 0.0087 - val_loss: 0.1507
+Train on 7319 samples, validate on 1830 samples
+Epoch 1/5
+7319/7319 [==============================] - 85s 12ms/step - loss: 0.0427 - val_loss: 0.2529
+Epoch 2/5
+7319/7319 [==============================] - 85s 12ms/step - loss: 0.0369 - val_loss: 0.2576
+Epoch 3/5
+7319/7319 [==============================] - 88s 12ms/step - loss: 0.0334 - val_loss: 0.2362
+Epoch 4/5
+7319/7319 [==============================] - 88s 12ms/step - loss: 0.0306 - val_loss: 0.2466
+Epoch 5/5
+7319/7319 [==============================] - 83s 11ms/step - loss: 0.0296 - val_loss: 0.2556
 ```
 
 
