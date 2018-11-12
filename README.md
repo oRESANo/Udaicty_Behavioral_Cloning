@@ -115,15 +115,19 @@ model.save('model.h5')
 
 first of all, 3 laps of running follwing the center line of track are made, 
 
-### put center line driving image here
+![](examples/centerline_driving.JPG)
 
 then I drive the car out of track and drive it back on purpose, this is because more drive back data will let the model handle how to drive the car properly when the car is out of center line
 
-### put out of track driving image here
+![](examples/pullback_driving.JPG)
 
-then I'm trying to solve the issue with old model by recording two more laps which is focusing on the last right turning 
+Then, I drive the car follow the side line to generate the driving boundary.
 
-### put last right turning image here
+![](examples/sideline_driving.JPG)
+
+Finally, for fixing the turning issue, I'm trying to solve the issue with old model by recording two more laps which is focusing on the last right turning 
+
+![](examples/last_turning.JPG)
 
 then I concatentate data
 ```
