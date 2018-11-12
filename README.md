@@ -25,7 +25,7 @@ My project includes the following files:
 
 #### _2. Submission includes functional code_
 Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
-```sh
+```
 python drive.py model.h5
 ```
 
@@ -38,7 +38,9 @@ The model.py file contains the code for training and saving the convolution neur
 #### 1. An appropriate model architecture has been employed
 
 my model architecture is showing below:
-#### put model architecture images here
+
+![](examples/model_architeture.JPG)
+
 you can see, the model is containing  5 layers of 2D convolutions, and 3 fully connected layer:
 
 | Layer         		|     input size	        					|   output size |
